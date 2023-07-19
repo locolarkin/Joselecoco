@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>actividad04</title>
+</head>
+<body>
+
+    <script>
+        // Leemos el número de niños
+        let numero_niños = prompt("Introduce el número de niños:");
+        console.log("El número de niños es: " + numero_niños);
+
+        // Leemos el número de niñas
+        let numero_niñas = prompt("Introduce el número de niñas:");
+        console.log("El número de niñas es: " + numero_niñas);
+
+        // Calculamos el porcentaje
+        let total_alumnos = parseInt(numero_niños) + parseInt(numero_niñas);
+        let porcentaje_niños = (parseInt(numero_niños) * 100) / total_alumnos;
+        let porcentaje_niñas = 100 - porcentaje_niños;
+
+        // Mostramos los resultados
+        alert("Hay un " + porcentaje_niños.toFixed(2) + "% de niños.");
+        alert("Hay un " + porcentaje_niñas.toFixed(2) + "% de niñas.");
+
+        // function calcular(nro1,nro2){
+        //     document.write("Sumar: " + (nro1+nro2) + "<br/>");
+        //     document.write("Restar: " + (nro1-nro2) + "<br/>");
+        //     document.write("Moltiplicación: " + (nro1*nro2) + "<br/>");
+        //     document.write("División: " + (nro1/nro2) + "<br/>");
+        //     document.write("<hr>");
+        // }  else  {
+        //     document.write("No tengo nada que mostrar");
+        // }
+    
+        
+        // for (var n=1; n<=5; n++){
+        //     document.write(n + "<br/>");
+        //     calcular(n, 5);
+        // }
+
+    </script>
+    
+</body>
+</html>

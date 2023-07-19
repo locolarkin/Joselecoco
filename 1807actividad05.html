@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function calcularTotalACobrar(importe, mes) {
+  if (mes.toLowerCase() === "octubre") {
+    return importe * 0.85;
+  } else {
+    return importe;
+  }
+}
+
+// Solicitar al usuario que ingrese el importe de la compra
+const importeCompra = parseFloat(prompt("Escribe el importe de la compra:"));
+
+// Solicitar al usuario que ingrese el mes
+const mesCompra = prompt("Introduce el mes:");
+
+// Calcular el total a cobrar al cliente
+const totalACobrar = calcularTotalACobrar(importeCompra, mesCompra);
+
+// Mostrar el resultado
+console.log("Cantidad a cobrar al cliente:", totalACobrar);
+    </script>
+
+</body>
+</html>

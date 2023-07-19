@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>actividad03</title>
+</head>
+<body>
+    <script>
+    // Leemos el primer número
+    let numero1 =parseInt ( prompt ("Introduce el primer número:"));
+    console.log("El primer número es: " + numero1);
+
+    // Leemos el segundo número
+    let numero2 =parseInt ( prompt ("Introduce el segundo número:"));
+    console.log("El segundo número es: " + numero2);
+
+    // Comparamos los dos números
+    if (numero1 > numero2) {
+        // Si el primer número es mayor que el segundo, imprimimos que numero1 es el mayor
+        alert(numero1 + " es el mayor de los dos.");
+    } else if (numero1 < numero2) {
+        // Si el primer número es menor que el segundo, imprimimos que numero2 es el mayor
+        alert(numero2 + " es el mayor de los dos.");
+    } else {
+        // Si no, son iguales
+        alert("Los números " + numero1 + " y " + numero2 + " son iguales.");
+    }
+</script>
+
+</body>
+</html>
