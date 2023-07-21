@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>actividad09</title>
+</head>
+<body>
+  <script>
+
+// MOSTRANDO LA TABLA DE MULTIPLICAR DE UN NUMERO ENTRE 0 Y 10
+
+let tabla =parseInt(prompt("Introduce un número"));
+alert("tabla de multiplicar del" + tabla);
+
+document.write("<h1>TABLA DEL " + tabla+ "</h1><br/>");
+  for (var n=0; n<=10; n++){
+    document.write( n + " x " + tabla + " = " + (n*tabla)+"<br/>")
+  }
+
+// TODAS LAS TABLAS DEL 0 AL 10
+for (var i=0; i<=10; i++){
+  document.write("<h1>TABLA DEL " + i+ "</h1><br/>");
+  for (var n=0; n<=10; n++){
+    document.write( n + " x " + i + " = " + (n*i)+"<br/>")
+  }
+}
+
+// TODAS LAS TABLAS DESDE EL 0 AL NUMERO INTRODUCIDO
+for (var i=0; i<=tabla; i++){
+  document.write("<h1> Tabla del " + i + "</h1><br/>");
+  for (var n=0; n<=10; n++){
+    document.write( n + " x " + i + " = " + (n*i)+"<br/>")
+  }
+}
+
+
+
+  </script>
+</body>
+</html>

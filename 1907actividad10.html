@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad10</title>
+</head>
+<body>
+    <script>
+        // Solicitar al usuario que ingrese el mes
+        const mes = prompt("Introduce el mes:");
+
+        // Solicitar al usuario que ingrese el importe de la compra
+        const precio = parseFloat(prompt("Escribe el importe de la compra:"));
+
+        let totalACobrar = 0; // Inicializar la variable totalACobrar
+
+        // Convertir el mes a minúsculas para evitar errores de capitalización
+        const mesMin = mes.toLowerCase();
+
+        switch (mesMin) {
+            case "enero":
+            case "febrero":
+                totalACobrar = precio * 0.80;
+                break; // Agregar break para evitar que se ejecuten los casos siguientes
+            case "julio":
+            case "agosto":
+                totalACobrar = precio * 0.85;
+                break;
+            case "noviembre":
+            case "diciembre":
+                totalACobrar = precio * 0.75;
+                break;
+            default: // Agregar un caso por defecto para manejar meses no válidos
+                console.log("Sentimos no poder aplicarle descuento este mes.");
+                break;
+        }
+
+        // Mostrar el resultado
+        console.log("Cantidad a cobrar al cliente:", totalACobrar);
+
+    </script>
+
+</body>
+</html>

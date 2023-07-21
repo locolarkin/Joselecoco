@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function accederAlGradoSuperior() {
+        const bachiller = prompt("¿Tienes el título de bachillerato? (si/no)");
+      
+        if (bachiller.toLowerCase() === "si") {
+          console.log("Puedes acceder al grado superior");
+        } else {
+          const pruebaAcceso = prompt("¿Tienes la prueba de acceso superada? (si/no)");
+          if (pruebaAcceso.toLowerCase() === "si") {
+            console.log("Puedes acceder al grado superior");
+          } else {
+            console.log("No puedes acceder al grado superior");
+          }
+        }
+      }     
+      accederAlGradoSuperior();
+
+
+// realizacion del mismo ejercicio con el uso de un switch
+
+      function accederAlGradoSuperior() {
+  const bachiller = prompt("¿Tienes el título de bachillerato? (si/no)");
+
+  switch (bachiller.toLowerCase()) {
+    case "si":
+      console.log("Puedes acceder al grado superior");
+      break;
+
+    case "no":
+      const pruebaAcceso = prompt("¿Tienes la prueba de acceso superada? (si/no)");
+      switch (pruebaAcceso.toLowerCase()) {
+        case "si":
+          console.log("Puedes acceder al grado superior");
+          break;
+        
+        case "no":
+          console.log("No puedes acceder al grado superior");
+          break;
+        
+        default:
+          console.log("Respuesta no válida.");
+      }
+      break;
+      
+    default:
+      console.log("Respuesta no válida.");
+  }
+}
+
+accederAlGradoSuperior();
+
+    </script>
+      
+</body>
+</html>

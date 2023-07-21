@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>actividad11</title>
+</head>
+<body>
+    <script>
+        let usuario = prompt ("Introduzca nombre de usuario");
+
+        if (usuario == "admin" || usuario == "Admin" || usuario == "ADMIN"){
+            alert("Bienvenido")
+            const pass = prompt("introduzca contraseña");
+            if (pass == "Webmaster"){
+                alert("contraseña correcta, puede acceder");
+            }
+            else if (pass === null || pass === " "){           
+                alert("contraseña cancelada, acceso denegado");
+            }
+            else{
+                alert("contraseña incorrecta");
+            }
+        }
+        else if (usuario === null || usuario === " "){
+            alert("acceso cancelado");
+        }
+        else{
+            alert("usuario incorrecto");
+
+        }
+    </script>
+</body>
+</html>

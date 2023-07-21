@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// PSEUDOCODIGO
+// Inicio proceso
+// escribir "introduzca contraseña"
+// leer contraseña //string de 6 caracteres
+// dar tres oportunidades para acertar la contraseña
+// si la contraseña es "123456" entonces
+// escribir:"bienvenido"
+// sino escribir: "contraseña incorrecta"
+// fin del proceso.
+
+
+function solicitarPassword() {
+  const PasswordCorrecto = "123456";
+  let oportunidades = 3;
+
+  while (oportunidades > 0) {
+    const PasswordIngresado = prompt(`Introduzca contraseña (${oportunidades} intentos restantes):`);
+
+    if (PasswordIngresado === PasswordCorrecto) {
+      console.log("¡Bienvenido!");
+      return true;
+    } else {
+      oportunidades--;
+      console.log("Contraseña incorrecta. Inténtalo de nuevo.");
+    }
+  }
+
+  console.log("Has agotado tus oportunidades. Acceso denegado.");
+  return false;
+}
+    </script>
+
+</body>
+</html>

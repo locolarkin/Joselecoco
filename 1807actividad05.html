@@ -6,28 +6,35 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
+  <script>
+    // Función para calcular el total a cobrar al cliente
+    function calcularTotalACobrar(importe, mes) {
+        // Convertir el mes a minúsculas para evitar errores de capitalización
+        const mesMin = mes.toLowerCase();
 
-function calcularTotalACobrar(importe, mes) {
-  if (mes.toLowerCase() === "octubre") {
-    return importe * 0.85;
-  } else {
-    return importe;
-  }
-}
+        if (mesMin === "octubre") {
+            return importe * 0.85;
+        } else {
+            return importe;
+        }
+    }
 
-// Solicitar al usuario que ingrese el importe de la compra
-const importeCompra = parseFloat(prompt("Escribe el importe de la compra:"));
+    // Solicitar al usuario que ingrese el importe de la compra
+    let importeCompra;
+    do {
+        importeCompra = parseFloat(prompt("Escribe el importe de la compra:"));
+    } while (isNaN(importeCompra)); // Validar que el importe sea un número válido
 
-// Solicitar al usuario que ingrese el mes
-const mesCompra = prompt("Introduce el mes:");
+    // Solicitar al usuario que ingrese el mes
+    const mesCompra = prompt("Introduce el mes:");
 
-// Calcular el total a cobrar al cliente
-const totalACobrar = calcularTotalACobrar(importeCompra, mesCompra);
+    // Calcular el total a cobrar al cliente
+    const totalACobrar = calcularTotalACobrar(importeCompra, mesCompra);
 
-// Mostrar el resultado
-console.log("Cantidad a cobrar al cliente:", totalACobrar);
-    </script>
+    // Mostrar el resultado
+    console.log("Cantidad a cobrar al cliente:", totalACobrar);
+</script>
+
 
 </body>
 </html>
