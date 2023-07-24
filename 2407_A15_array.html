@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const nombres = ['Juan', 'María', 'Pedro', 'Luis', 'Ana'];
+
+for (let i = 0; i < nombres.length; i++) {
+  console.log(nombres[i]);
+}
+
+const lugares = nombres.map((nombre, index) => {
+  return [nombre, index];
+});
+
+console.log(lugares);
+    </script>
+</body>
+</html>

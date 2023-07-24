@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+
+<body>
+    <form action="" name="formulario">
+        <textarea name="miarea" placeholder="introduzca una frase" cols="30" rows="5"></textarea>
+        <input type="button" value="Pulsar" onclick="pulsar()">
+    </form>
+
+    <div id="resultado"></div>
+    <script>
+        function pulsar() {
+            var arr = [];
+            arr = document.formulario.miarea.value.split(" ");
+
+            var n_palabras = arr.length;
+            var p_palabra = arr[0];
+            var u_palabra = arr[arr.length - 1];
+
+            document.getElementById("resultado").innerHTML = "número de palabras: " + n_palabras + "<br> Primera palabra: " + p_palabra + "<br> Última palabra: " + u_palabra;
+        }
+    </script>
+
+</body>
+</html>

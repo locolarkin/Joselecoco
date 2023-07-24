@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+
+<form action="" name="formulario">
+  <input type="number" name="codigo" placeholder="Código">
+  <input type="text" name="nombre" placeholder="Nombre">
+  <input type="text" name="apellidos" placeholder="Apellidos">
+  <input type="number" name="edad" placeholder="Edad">
+  <input type="email" name="email" placeholder="Correo electrónico">
+  <input type="tel" name="telefono" placeholder="Teléfono">
+  <select name="tema">
+    <option value="HTML">HTML</option>
+    <option value="CSS">CSS</option>
+    <option value="JavaScript">JavaScript</option>
+  </select>
+  <input type="submit" value="Enviar" onclick="rellenarArrayYMostrarDatos()">
+</form>
+
+<script>
+function rellenarArrayYMostrarDatos() {
+  var datos = [
+    document.getElementById("codigo").value,
+    document.getElementById("nombre").value,
+    document.getElementById("apellidos").value,
+    document.getElementById("edad").value,
+    document.getElementById("email").value,
+    document.getElementById("telefono").value,
+    document.getElementById("tema").value
+  ];
+
+  var div = document.getElementById("resultado");
+  div.innerHTML = "";
+  for (var i = 0; i < datos.length; i++) {
+    div.innerHTML = datos[i] + "<br>";
+  }
+}
+
+window.onload = rellenarArrayYMostrarDatos;
+
+</script>
+
+<div id="resultado"></div>
+</body>
+</html>
+
