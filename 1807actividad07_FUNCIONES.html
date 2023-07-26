@@ -11,19 +11,20 @@
 <div class="cuerpo">
   <!-- ACTIVIDAD02 -->
 
-<div class="sección">
+<div class="sección" id="A02">
   <h2>Operaciones Aritméticas</h2>
+  <img src="media/scifi.png" alt="avion" id="matrix">
   <label for="primerNumero">Introduce el primer número:</label>
   <input type="text" id="primerNumero" placeholder="Escribe el primer número">
 
   <label for="segundoNumero">Introduce el segundo número:</label>
   <input type="text" id="segundoNumero" placeholder="Escribe el segundo número">
 
-  <button onclick="realizarOperaciones()">Realizar Operaciones</button>
+  <button onmouseover="cambiar();" onmouseout="volver();"onclick="realizarOperaciones()">Realizar Operaciones</button>
 </div>
 
 <!-- ACTIVIDAD03 -->
-<div class="sección">
+<div class="sección" id="A03">
   <h2>Comparar Números</h2>
   <label for="numero1">Introduce el primer número:</label>
   <input type="text" id="numero1" placeholder="Escribe el primer número">
@@ -35,7 +36,7 @@
 </div>
 
 <!-- ACTIVIDAD04 -->
-<div class="sección">
+<div class="sección" id="A04">
 <h2>Calcular Porcentaje de Niños y Niñas</h2>
     <label for="numeroNiños">Introduce el número de niños:</label>
     <input type="text" id="numeroNiños" placeholder="Escribe el número de niños">
@@ -47,7 +48,7 @@
 </div>
 
 <!-- ACTIVIDADES 05 Y 10 -->
-<div class="sección">
+<div class="sección" id="A05">
 <h2>Calculadora de descuento</h2>
 <label for="mes">Introduce el mes:</label> <br>
 <input type="text" id="mes" placeholder="Escribe el mes"><br>
@@ -58,19 +59,19 @@
 </div>
 
 <!-- ACTIVIDAD06 -->
-<div class="sección">
+<div class="sección" id="A06">
 <h2>Solicitar Contraseña</h2>
 <button onclick="solicitarPassword()">Solicitar Contraseña</button>
 </div>
 
 <!-- ACTIVIDAD 11 -->
-<div class="sección">
+<div class="sección" id="A11">
 <h2>Verificar Credenciales</h2>
 <button onclick="verificarCredenciales()">Verificar Credenciales</button>
 </div>
 
 <!-- ACTIVIDAD12 -->
-<div class="sección">
+<div class="sección" id="A12">
 <h2>Calcular Resultado de Operación</h2>
 <label for="operacion">Ingrese una operación matemática:</label>
 <input type="text" id="operacion" placeholder="Escribe la operación">
@@ -102,6 +103,13 @@ function realizarOperaciones() {
             alert("Resultados:\n\nSuma: " + suma + "\nResta: " + resta + "\nMultiplicación: " + multiplicacion + "\nDivisión: " + division);
           }
 
+
+  function cambiar(){
+    document.getElementById('matrix').src="media/scifi.png";
+  }
+  function volver(){
+    document.getElementById('matrix').src="media/triangles.png";
+  }
 
 // SCRIPT ACTIVIDAD03
 
