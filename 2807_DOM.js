@@ -45,4 +45,4 @@ for(div in divcaja){
 }
 
 var solouno = document.querySelectorAll('div');
-console.log(varios);
+console.log(solouno);
