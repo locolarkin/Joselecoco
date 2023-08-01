@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulario de Contacto</title>
+<style>
+body {
+  font-family: sans-serif;
+  display:flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-top: 10px;
+  background-color: #ccc;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+}
+
+
+</style>
+</head>
+<body>
+
+<form action="" method="post" id="formulario" onsubmit="return false">
+
+    <label for="nombre">Nombre:</label> <br>
+  <input type="text" name="nombre" id="nombre"><br>
+  <span id="error_nombre"></span> <br>
+
+  <label for="apellidos">Apellidos:</label> <br>
+  <input type="text" name="apellidos" id="apellidos"> <br>
+  <span id="error_apellidos"></span><br>
+
+  <label for="edad">Edad:</label> <br>
+  <input type="number" name="edad" id="edad"> <br>
+  <span id="error_edad"></span><br>
+
+  <button type="submit">Enviar</button>
+</form>
+
+<div class="error"></div>
+<div class="box info">
+    <h3>Informacion <del></del> Usuario</h3>
+    <hr>
+    <p id="i_nombre">
+        Nombre: <span></span>
+    </p>
+    <p id="i_apellidos">
+        Apellidos: <span></span>
+    </p>
+    <p id="i_edad">
+        Edad: <span></span>
+    </p>
+
+</div>
+
+</body>
+<script>
+var formulario = document.querySelector("#formulario");
+var box_info = document.querySelector(".info");
+box_info.style.display = "none";
+
+formulario.addEventListener( 'submit', function(){
+
+    var nombre = document.querySelector("#nombre").value;
+    var apellido = document.querySelector("#apellidos").value;
+    var edad = parseInt(document.querySelector("#edad").value);
+
+    if(nombre.trim() == null || nombre.trim() == ""){
+        document.querySelector("#error_nombre").innerHTML = "Nombre no valido ";
+        document.querySelector("#error_nombre").style.color = "red ";
+        return false
+
+    }else{
+        document.querySelector("#error_nombre").innerHTML = "Nombre válido ";
+        document.querySelector("#error_nombre").style.color = "green ";
+        
+    }
+
+
+    if(apellido.trim() == null || apellido.trim() == ""){
+        document.querySelector("#error_apellidos").innerHTML = "apellidos no validos ";
+        document.querySelector("#error_apellidos").style.color = "red ";
+        return false
+
+    }else{
+        document.querySelector("#error_apellidos").innerHTML = "apellidos válidos ";
+        document.querySelector("#error_apellidos").style.color = "green ";
+    }
+
+    if(edad == null || edad<= 0 || isNaN(edad)){
+        document.querySelector("#error_edad").innerHTML = "edad no valida ";
+        document.querySelector("#error_edad").style.color = "red ";
+        return false
+
+    }else{
+        document.querySelector("#error_edad").innerHTML = "edad válida ";
+        document.querySelector("#error_edad").style.color = "green ";
+    }
+
+    box_info.style.display = "block";
+
+var i_nombre = document.querySelector("#i_nombre span");
+var i_apellidos = document.querySelector("#i_apellidos span");
+var i_edad = document.querySelector("#i_edad span");
+
+i_nombre.innerHTML = nombre;
+i_apellidos.innerHTML = apellido;
+i_edad.innerHTML = edad;
+    
+})
+
+
+
+
+</script>
+</html>
