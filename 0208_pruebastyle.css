@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    background-color: #00214A;
+    color: #CDEAE8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body {
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #CDEAE8;
+    cursor: pointer;
+}
+
+nav {
+    justify-content: end;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: auto;
+}
+
+li {
+    padding: 1rem;
+}
+
+
+h1 {
+    padding: 2rem;
+    text-align: center;
+}
+
+h2 {
+    padding: 2rem;
+    font-size: xx-large;
+}
+
+input {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D3F7C;
+    color: #CDEAE8;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin: auto;
+}
+
+button {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 15px;
+    font-weight: bolder;
+    background-color: rgb(27, 27, 66);
+    color: white;
+}
+
+footer {
+    width: 100%;
+    background-color: #CDEAE8;
+}
+
+.main {
+    display: flex;
+    height: 90%;
+}
+
+.w30 {
+    width: 30%;
+    text-align: center;
+    border: 3px solid #00214A;
+}
+
+.aside {
+    margin: auto;
+    padding: 3rem;
+    height: 40%;
+}
+
+.principal {
+    width: 70%;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 3px solid #00214A;
+}
+
+#plow {
+    width: 300px;
+    margin: auto;
+}
+
+#warrior {
+    width: auto;
+}
+
+#logo {
+    width: 3rem;
+    height: 3rem;
+    justify-content: flex-start;
+    margin: 1rem;
+}
+
+#legal {
+    padding: 3rem;
+   text-align: center;
+    margin-top: 2rem;
+}
+#contform {
+    justify-content: center;
+    align-items: center;
+   text-align: center;
+   width: 100%;
+   
+}
+
+.llenarCampos::after,
+.noExsiteError::after,
+.repetidoError::after,
+.realizado::after {
+    background-color: red;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.realizado::after {
+    content: 'Realizado';
+    background-color: green;
+}
+
+.repetidoError::after {
+    content: 'Este elemento ya existe';
+}
+
+.llenarCampos::after {
+    content: 'Por favor compruebe que todos los campos estan llenos';
+}
