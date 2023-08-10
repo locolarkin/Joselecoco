@@ -1,0 +1,40 @@
+#datos{
+    border: 2px solid green;
+    width: 400px;
+    height: 400px;
+    overflow: scroll;
+
+}
+
+h1{
+    text-align: center;
+}
+
+div{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: auto;
+    padding: 3px;
+}
+
+input{
+    margin: auto;
+    padding: 4px;
+    border-radius: 15px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    padding: 3px;
+}
+
