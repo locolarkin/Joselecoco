@@ -1,0 +1,262 @@
+html{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+header img{
+    width: 8vw;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+
+li {
+    color: blue;
+    display: flex;
+    font-weight: bold;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1vh;
+    width: 12rem;
+    justify-content: center;
+    height: 3em;
+    background-color: rgb(230, 235, 248);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+header button{
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    margin: 1vw;
+    padding: 2vh 1vw;
+    cursor: pointer;
+}
+
+.principal{
+    display: flex;
+    flex-direction: row;
+    /* height: 70vh; */
+    background-color: white;
+    color: white;
+}
+
+.w70{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(media/imagen-fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 90vw;
+    
+}
+
+.w70 video{
+    width: 60vw;
+}
+
+.w70 button{
+    text-align: center;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    margin: 1vw;
+    padding: 0.5vh 2vw;
+}
+
+.w70 a{
+    color: white;
+    text-decoration: none;
+}
+
+.w70 h1{
+    font-weight: bolder;
+}
+
+.w70 .formulario{
+    background-color: rgb(0, 81, 255);
+    text-align: center;
+    border-radius: 20px;
+}
+
+.w70 form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0rem 5rem 0;
+    
+}
+
+.legal{
+    color: white;
+    padding: 0rem 5rem 0;
+
+}
+
+form label{
+    color: white;
+    margin: 1rem;  
+}
+
+form input{
+    border-radius: 15px;
+}
+
+.w30{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    border: 3px solid white; 
+    width: 40vw;
+    overflow: scroll;
+}
+
+.w30 p{
+    color: black;
+    font-weight: bold;
+}
+
+.titulo{
+    border: 2px solid white;
+    background-color: rgb(0, 81, 255);
+}
+
+footer{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#styleButtons{
+    display: none;
+}
+
+/* MODO ALTO CONTRASTE */
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.dark-li {
+    color: rgb(255, 255, 255);
+    display: flex;
+    font-weight: bold;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1vh;
+    width: 12rem;
+    justify-content: center;
+    height: 3em;
+    background-color: rgb(109, 109, 109);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.dark-h3 {
+    background-color: rgb(49, 49, 49);
+    color: white;
+}
+
+/* MAGMA MODE  */
+
+.magma-mode {
+    background-color: rgb(121, 24, 0);
+    color: rgb(250, 224, 79);
+}
+
+.magma-li {
+    color: rgb(250, 224, 79);
+    display: flex;
+    font-weight: bold;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1vh;
+    width: 12rem;
+    justify-content: center;
+    height: 3em;
+    background-color: rgb(161, 65, 20);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.magma-h3 {
+    background-color: rgb(161, 65, 20);
+    color: rgb(250, 224, 79);
+}
+
+/* FOREST MODE */
+
+.forest-mode {
+    background-color: rgb(0, 121, 61);
+    color: rgb(251, 253, 232);
+}
+
+.forest-li {
+    color: rgb(251, 253, 232);
+    display: flex;
+    font-weight: bold;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1vh;
+    width: 12rem;
+    justify-content: center;
+    height: 3em;
+    background-color: rgb(20, 161, 95);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.forest-h3 {
+    background-color: rgb(20, 161, 95);
+    color: rgb(251, 253, 232);
+}
+
+
+/* CYBERPUNK MODE */
+
+.cyber-mode {
+    background-color: rgb(29, 22, 54);
+    color: rgb(250, 153, 250);
+}
+
+.cyber-li {
+    color: rgb(132, 216, 255);
+    display: flex;
+    font-weight: bold;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1vh;
+    width: 12rem;
+    justify-content: center;
+    height: 3em;
+    background-color: rgb(255, 0, 212);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.cyber-h3 {
+    background-color: rgb(255, 0, 212);
+    color: rgb(132, 216, 255);
+}
+
