@@ -1,0 +1,37 @@
+main{  
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin: 3rem;
+    padding: 3rem;
+
+}
+
+nav{
+    font-family: Quicksand;
+    font-weight: bolder;
+    padding: 1rem;
+    color: #ffffff;
+    background-color: #00214a;
+    display: flex;
+    margin: auto;
+    
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0em;
+    margin-left: auto;
+}
+
+li{
+    margin: 1rem;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

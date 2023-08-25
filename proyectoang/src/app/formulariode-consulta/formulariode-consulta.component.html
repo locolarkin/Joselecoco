@@ -1,0 +1,12 @@
+<div id="contform">
+    <form action="" name="formulario">
+        <label for="name" id="nombre" name="nombreDelAlumno">Nombre Usuario</label>
+        <input [(ngModel)]="usuario" type="text">
+        <label for="email" id="email">Correo Electronico</label>
+        <input [(ngModel)]="email" type="text">
+        <label for="topic" id="asunto">Asunto</label>
+        <input [(ngModel)]="topic" type="text">
+        <label for="mensaje" id="mensaje">Mensaje</label>
+        <textarea [(ngModel)]="mensaje" name="" cols="30" rows="5" placeholder="Escriba su comentario"></textarea>
+        <button id="addbutton">Enviar</button>
+    </form></div>
