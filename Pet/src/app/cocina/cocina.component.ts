@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./cocina.component.css']
 })
 export class CocinaComponent {
+public Alimentar: number
 
+constructor(){
+  this.Alimentar = +1
+}
 }
