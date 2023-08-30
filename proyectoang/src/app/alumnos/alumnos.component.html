@@ -1,6 +1,7 @@
 <h3>Listado de Alumnos</h3>
 <ul id="AlumnList">
-    <li>{{Alumno1}}</li>
-    <li>{{Alumno2}}</li>
-    <li>{{Alumno3}}</li>
+    <li *ngFor=" let listado of alumnosall">
+      <a routerLink="/alumno">  {{listado.nombreA}}{{listado.apellidoA}}</a> - 
+        <span *ngIf="listado.estadoA != false">MATRICULADO</span>
+    </li>
 </ul>

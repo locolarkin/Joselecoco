@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 // Importar componentes
 
-import { AppComponent } from './app.component';
+// import { AppComponent } from './app.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { CursoComponent } from './curso/curso.component';
 import { AlumnosComponent } from './alumnos/alumnos.component';
@@ -16,7 +16,7 @@ import { FormulariodeConsultaComponent } from './formulariode-consulta/formulari
 
 
 const routes: Routes = [
-  {path:'',component:AppComponent},
+  // {path:'',component:AppComponent},
   {path:'cursos',component:CursosComponent},
   {path:'curso',component:CursoComponent},
   {path:'alumnos',component:AlumnosComponent},

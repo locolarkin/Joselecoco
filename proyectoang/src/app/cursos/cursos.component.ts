@@ -1,16 +1,19 @@
 import { Component } from '@angular/core';
 import{ cursosBD } from 'src/app/modelos/cursosBD'
+import { CursosService } from '../servicios/cursos.service';
 
 @Component({
   selector: 'app-cursos',
   templateUrl: './cursos.component.html',
-  styleUrls: ['./cursos.component.css']
+  styleUrls: ['./cursos.component.css'],
+  providers: [CursosService]
 })
+
 export class CursosComponent {
 
   public cursosAll: Array<cursosBD>
  
-  constructor(){
+  constructor(private _CursosService: CursosService){
 
     this.cursosAll = [
       new cursosBD('ILUSTRACIÓN','con un 6 y un 4 haremos nuestro retrato','(150 horas)'),
@@ -19,7 +22,7 @@ export class CursosComponent {
     ]
   }
   ngOnInit(){
-    console.log("OnInit Ejecutado")
+    this.cursosAll = this._CursosService.getCursos();
   }
 
 

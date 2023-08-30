@@ -1,6 +1,6 @@
 <h3>LISTADO DE CURSOS</h3>
 <ul>
-    <li *ngFor="let datos of cursosAll">{{datos.nombreC}} <br><br> 
+    <li *ngFor="let datos of cursosAll"> <a routerLink="/curso">{{datos.nombreC}}</a> <br><br> 
         {{datos.descripcionC}} <br><br> {{datos.duracionC}}</li>
 </ul>
 

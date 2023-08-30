@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { alumnosBD } from 'src/app/modelos/alumnosBD';
 
 @Component({
   selector: 'app-alumnos',
@@ -6,13 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./alumnos.component.css']
 })
 export class AlumnosComponent {
-  public Alumno1: string
-  public Alumno2: string
-  public Alumno3: string
+  public alumnosall: Array<alumnosBD>
 
   constructor(){
-    this.Alumno1 = "Paco Paquez Packinson"
-    this.Alumno2 = "Ramon Rodriguez Rivera"
-    this.Alumno3 = "Maria Martinez Mora"
+    this.alumnosall = [
+      new alumnosBD("Manuel", "M. P.", 54,"manuelmacpe@gmail.com", "667936811","./assets/media/fotommp.jpg", true, 6), 
+      new alumnosBD("Miguel", "R. R.", 39,"miguelrr@gmail.com", "123456789","./assets/media/fotommp.jpg", true, 8), 
+      new alumnosBD("Javier", "D. M.", 19,"javierdm@gmail.com", "123456789","./assets/media/fotommp.jpg", true, 8)
+]
 }
 }

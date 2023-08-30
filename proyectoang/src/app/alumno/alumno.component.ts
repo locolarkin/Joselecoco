@@ -1,18 +1,23 @@
 import { Component } from '@angular/core';
 import{ alumnosBD } from 'src/app/modelos/alumnosBD'
+import { AlumnosService } from '../servicios/alumnos.service';
 
 @Component({
   selector: 'app-alumno',
   templateUrl: './alumno.component.html',
-  styleUrls: ['./alumno.component.css']
+  styleUrls: ['./alumno.component.css'],
+  providers: [AlumnosService]
 })
+
 export class AlumnoComponent {
   public alumnosAll: Array<alumnosBD>
 
-  constructor(){
-    this.alumnosAll=[
-      new alumnosBD('Paco','Paquez Packinson',33,'Paquito@gmail.com','555324352','https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?w=2000',true)
-    ]
+  constructor(private _alumnosService: AlumnosService) {
+    this.alumnosAll= new Array<alumnosBD>
+  }
+
+  ngOnInit(): void {
+    this.alumnosAll = this._alumnosService.getAlumnos();
   }
 
 }

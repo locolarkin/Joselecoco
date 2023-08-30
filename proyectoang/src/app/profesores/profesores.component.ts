@@ -1,18 +1,21 @@
 import { Component } from '@angular/core';
+import { profesoresBD } from '../modelos/profesoresBD';
+import { ProfesoresService } from '../servicios/profesores.service';
 
 @Component({
   selector: 'app-profesores',
   templateUrl: './profesores.component.html',
-  styleUrls: ['./profesores.component.css']
+  styleUrls: ['./profesores.component.css'],
+  providers: [ProfesoresService]
 })
 export class ProfesoresComponent {
-  public Profesor1 : string
-  public Profesor2 : string
-  public Profesor3 : string
+public profesoresall: Array<profesoresBD>
 
-  constructor(){
-    this.Profesor1 = "Paco el Flaco"
-    this.Profesor2 = "Florinda Chico"
-    this.Profesor3 = "Lorenzo Lamas"
+  constructor(private _profesoresService: ProfesoresService){
+    this.profesoresall = new Array<profesoresBD>
   }
+ngOnInit(){
+  this.profesoresall = this._profesoresService.getProfesores();
+}
+
 }

@@ -13,6 +13,9 @@ import { ProfesorComponent } from './profesor/profesor.component';
 import { FormularioAccesoComponent } from './formulario-acceso/formulario-acceso.component';
 import { FormulariodeRegistroComponent } from './formulariode-registro/formulariode-registro.component';
 import { FormulariodeConsultaComponent } from './formulariode-consulta/formulariode-consulta.component';
+import { AlumnosService } from './servicios/alumnos.service';
+import { ProfesoresService } from './servicios/profesores.service';
+import { CursosService } from './servicios/cursos.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,11 @@ import { FormulariodeConsultaComponent } from './formulariode-consulta/formulari
     ProfesorComponent,
     FormularioAccesoComponent,
     FormulariodeRegistroComponent,
-    FormulariodeConsultaComponent
+    FormulariodeConsultaComponent,
+    // AlumnosService,
+    // ProfesoresService,
+    // CursosService
+
   ],
   imports: [
     BrowserModule,

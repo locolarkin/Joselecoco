@@ -17,8 +17,7 @@
         font-family: Quicksand;
         color: #fdfdfd;
         background-color: #00214a;
-        margin-left: 3rem;
-        margin-right: 3rem;
+        margin: auto;
         padding:1rem;
         text-align: center;
         width: 400px;
@@ -31,7 +30,6 @@
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
         width: 400px;
-        margin-left: 3rem;
-        margin-right: 3rem;
+        margin: auto;
         list-style: none;
     }

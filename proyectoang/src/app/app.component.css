@@ -4,7 +4,16 @@ main{
     flex-wrap: wrap;
     margin: 3rem;
     padding: 3rem;
+}
+.content{
+    height: 720px;
+}
 
+img{
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 0.8rem;
+    padding-top: 0.5rem;
 }
 
 nav{
@@ -15,7 +24,12 @@ nav{
     background-color: #00214a;
     display: flex;
     margin: auto;
+    border-bottom: 1rem;
     
+}
+
+a{
+    color: #ffffff;
 }
 
 ul{
@@ -28,10 +42,24 @@ ul{
 
 li{
     margin: 1rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 h3{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+footer{
+    font-family: Quicksand;
+    font-weight: bolder;
+    padding: 1rem;
+    color: #ffffff;
+    background-color: #00214a;
+    display: flex;
+    margin: auto;
+    
 }

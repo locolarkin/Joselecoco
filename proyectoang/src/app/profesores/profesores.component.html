@@ -1,6 +1,6 @@
 <h3>Lista de Profesores</h3>
 <ul id="ProfList">
-    <li>{{Profesor1}}</li>
-    <li>{{Profesor2}}</li>
-    <li>{{Profesor3}}</li>
+    <a routerLink="/profesor"><li *ngFor=" let listado of profesoresall">
+        {{listado.nombreA}}{{listado.apellidoA}}
+    </li></a>
 </ul>
