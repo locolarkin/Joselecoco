@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 // Importar componentes
 
-// import { AppComponent } from './app.component';
+import { AppComponent } from './app.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { CursoComponent } from './curso/curso.component';
 import { AlumnosComponent } from './alumnos/alumnos.component';
@@ -13,10 +13,10 @@ import { ProfesorComponent } from './profesor/profesor.component';
 import { FormularioAccesoComponent } from './formulario-acceso/formulario-acceso.component';
 import { FormulariodeRegistroComponent } from './formulariode-registro/formulariode-registro.component';
 import { FormulariodeConsultaComponent } from './formulariode-consulta/formulariode-consulta.component';
-
+import { CrearcursoComponent } from './crearcurso/crearcurso.component';
 
 const routes: Routes = [
-  // {path:'',component:AppComponent},
+  {path:'',component:AppComponent},
   {path:'cursos',component:CursosComponent},
   {path:'curso',component:CursoComponent},
   {path:'alumnos',component:AlumnosComponent},
@@ -26,6 +26,8 @@ const routes: Routes = [
   {path:'formulario-acceso',component:FormularioAccesoComponent},
   {path:'formulariode-registro',component:FormulariodeRegistroComponent},
   {path:'formulariode-registro',component:FormulariodeConsultaComponent},
+  {path: 'crear_curso',component:CrearcursoComponent},
+  {path:'**',component:AppComponent}
 ];
 
 @NgModule({
