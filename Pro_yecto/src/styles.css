@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+body{
+background:#0d3f7c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #0d3f7c, #cdeae8);  /* Chrome 10-25, Safari 5.1-6 */
+background: rgb(0,33,74);
+background: linear-gradient(0deg, rgba(0,33,74,1) 0%, rgba(0,212,255,1) 40%, rgba(205,234,232,1) 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.titulo{
+    font-size: 1.5rem;
+}
+html, body { height: 100%; }
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-weight: bold;
+ }
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+h2 {
+    font-family: 'Quicksand', sans-serif;
+    background: rgb(0,33,74);
+    color: #cdeae8;
+    
+}
+p {
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(0,33,74);
+}
