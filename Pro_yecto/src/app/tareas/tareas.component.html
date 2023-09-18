@@ -2,10 +2,10 @@
     <div class="example-box" *ngFor="let movie of movies" cdkDrag>{{movie}}</div>
   </div> -->
 
-  <div cdkDropListGroup>
-    <div class="example-container">
-      <h2>To do</h2>
-  
+  <div cdkDropListGroup >
+    <div cdkDrag><div class="example-container">
+
+      <h2>To do </h2>
       <div
         cdkDropList
         [cdkDropListData]="todo"
@@ -13,18 +13,27 @@
         (cdkDropListDropped)="drop($event)">
         <div class="example-box" *ngFor="let item of todo" cdkDrag>{{item}}</div>
       </div>
-    </div>
+    </div></div>
+
+    <div cdkDrag><div class="example-container"></div>
+    <h2>In Progress</h2>
+    <div
+      cdkDropList
+      [cdkDropListData]="Inprogress"
+      class="example-list"
+      (cdkDropListDropped)="drop($event)">
+      <div class="example-box" *ngFor="let item of Inprogress" cdkDrag>{{item}}</div>
+    </div></div>
   
-    <div class="example-container">
-      <h2>Done</h2>
-  
+    <div class="example-container" cdkDrag>
+      <h2>Done</h2> 
       <div
         cdkDropList
         [cdkDropListData]="done"
         class="example-list"
         (cdkDropListDropped)="drop($event)">
         <div class="example-box" *ngFor="let item of done" cdkDrag>{{item}}</div>
-      </div>
-    </div>
+      </div></div>
+
   </div>
   

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { profesorBase } from '../Models/alumnos';
-import { alumnosBD } from '../Models/alumnos';
+import { UsersBD } from '../Models/alumnos';
 import { CursosService } from '../servicios/cursos.service';
 
 
@@ -11,18 +10,14 @@ import { CursosService } from '../servicios/cursos.service';
   providers: [CursosService]
 })
 export class AlumnosComponent implements OnInit {
-  public nombreProfesor: string;
-  public fotoProfesor: string;
-  public alumnosall: Array<alumnosBD>;
+  public alumnosall: Array<UsersBD>;
   public correosEle: string[] = [];
   public notaAlumno: number = 5;
   public Nota: number = 0;
   public registrado: boolean = false;
 
   constructor(private _cursosService: CursosService) {
-    this.alumnosall = new Array<alumnosBD>()
-    this.nombreProfesor = profesorBase.nombre;
-    this.fotoProfesor = profesorBase.foto;
+    this.alumnosall = new Array<UsersBD>()
   }
 
   ngOnInit(): void {
@@ -32,7 +27,7 @@ export class AlumnosComponent implements OnInit {
 
   getcorreosEle() {
     this.alumnosall.forEach((alumno) => {
-      this.correosEle.push(alumno.correoA);
+      this.correosEle.push(alumno.correo);
     });
     console.log(this.correosEle);
   }

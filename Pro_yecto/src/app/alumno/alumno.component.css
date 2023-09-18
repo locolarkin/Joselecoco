@@ -1,9 +1,63 @@
 .example-card {
     max-width: 400px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 3px solid #0d3f7c;
   }
   
   .example-header-image {
     background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
     background-size: cover;
+  }
+
+  #title{
+    background-color: #0d3f7c;
+    color: white;
+    font-family: quicksand;
+    font-weight: bold;
+    border-top-left-radius: 15px;
+  }
+
+  button {
+    font-family: quicksand;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100px;
+    margin: 15px;
+    border-radius: 15px;
+    justify-content: center;
+  }
+
+  #b1 {
+    border: solid 3px #04bbec;
+    background: rgb(0,33,74);
+    background: linear-gradient(0deg, rgba(0,33,74,1) 0%, rgba(12,60,120,1) 5%, rgba(13,63,124,1) 95%, rgba(0,115,255,1) 100%);
+    color: white;
+  }
+
+  #b2 {
+    background-color: #ea25b5;
+    border: solid 3px #ff82f4;
+    color: white;
+  }
+
+  #subtitle {
+    color: white;
+  }
+
+  #minicara {
+    border: 3px solid #ff82f4;
+  }
+
+  p {
+    margin: 20px;
+    font-family: roboto;
+  }
+
+  svg{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
   }
   

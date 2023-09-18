@@ -1,0 +1,11 @@
+#creador {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    background: rgb(0,33,74);
+    background: linear-gradient(0deg, rgba(0,33,74,1) 0%, rgba(12,60,120,1) 5%, rgba(13,63,124,1) 95%, rgba(0,115,255,1) 100%);
+    border: solid 3px #04bbec;
+}
+

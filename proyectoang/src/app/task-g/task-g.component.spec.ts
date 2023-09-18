@@ -1,15 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { RegistroComponent } from './registro.component';
 
-describe('RegistroComponent', () => {
-  let component: RegistroComponent;
-  let fixture: ComponentFixture<RegistroComponent>;
+import { TaskGComponent } from './task-g.component';
+
+describe('TaskGComponent', () => {
+  let component: TaskGComponent;
+  let fixture: ComponentFixture<TaskGComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [RegistroComponent]
+      declarations: [TaskGComponent]
     });
-    fixture = TestBed.createComponent(RegistroComponent);
+    fixture = TestBed.createComponent(TaskGComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

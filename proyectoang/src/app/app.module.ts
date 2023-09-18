@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { CursosComponent } from './cursos/cursos.component';
@@ -15,6 +16,8 @@ import { FormularioAccesoComponent } from './formulario-acceso/formulario-acceso
 import { FormulariodeRegistroComponent } from './formulariode-registro/formulariode-registro.component';
 import { FormulariodeConsultaComponent } from './formulariode-consulta/formulariode-consulta.component';
 import { CrearcursoComponent } from './crearcurso/crearcurso.component';
+import { TaskGComponent } from './task-g/task-g.component';
+import { ToastrService } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -29,13 +32,17 @@ import { CrearcursoComponent } from './crearcurso/crearcurso.component';
     FormulariodeRegistroComponent,
     FormulariodeConsultaComponent,
     CrearcursoComponent,
+    
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    ToastrService,
+    TaskGComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

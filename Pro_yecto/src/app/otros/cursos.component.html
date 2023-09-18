@@ -10,7 +10,7 @@
 
 	<ul>
 		<li *ngFor="let curso of cursos" class="curso">
-			<a [routerLink]="['/curso', curso._id]">
+			<a [routerLink]="['./cursos', curso._id]">
 				<div class="image">
 					<img src="{{'get-image/'+curso.image}}" *ngIf="curso.image" alt="Imagen del curso"/>
 				</div>

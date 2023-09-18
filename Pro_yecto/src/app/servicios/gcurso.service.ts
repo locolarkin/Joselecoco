@@ -8,7 +8,7 @@ import { GCurso } from '../Models/gcurso';
 })
 export class GcursoService {
 
-  url= 'http://localhost:3700/api/cursos/'
+  url= 'http://localhost:4200/api/cursos/'
 
   constructor(private http: HttpClient) { }
 

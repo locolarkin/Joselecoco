@@ -1,9 +1,9 @@
-<div class="container mt-15">
+<div class="container mt-15" cdkDrag >
     <div class="row">
-        <div class="col-lg-12">
-            <div class="card">
-                <div class="card-body text-center">
-                    <span class="titulo">{{ titulo | uppercase }}</span>
+        <div class="col-lg-6" >
+            <div class="card" id="papito">
+                <div class="card-body text-center" id="creador" >
+                    <span class="titulo" id="titulo">{{ titulo | uppercase }}</span>
                     <form class="mb-3" [formGroup]="cursoForm" (ngSubmit)="agregarCurso()">
                         <div class="mb-3">
                             <input type="text" formControlName="nombre" class="form-control" placeholder="Curso">
@@ -12,7 +12,7 @@
                             </div>
                         </div>
                         <div class="mb-3">
-                            <input type="text" formControlName="descripcion" class="form-control" placeholder="Descripción">
+                            <textarea type="text" formControlName="descripcion" class="form-control" placeholder="Descripción"></textarea>
                             <div class="text-danger" *ngIf="cursoForm.get('descripcion')?.hasError('required') && cursoForm.get('descripcion')?.touched">
                                 <span>La descripción es obligatoria</span>
                             </div>
@@ -37,7 +37,7 @@
                         </div>
                         <div class="mb-3">
                             <button class="btn btn-secondary float-start" routerLink="/">VOLVER</button>
-                            <button type="submit" [disabled]="cursoForm.invalid" class="btn btn-success float-end">ACEPTAR</button>
+                            <button id="Enviar" type="submit" [disabled]="cursoForm.invalid" class="btn btn-success float-end">ACEPTAR</button>
                         </div>
                     </form>
                 </div>

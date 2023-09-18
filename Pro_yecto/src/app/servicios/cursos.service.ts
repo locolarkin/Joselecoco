@@ -1,18 +1,18 @@
 import { Injectable } from "@angular/core";
-import { alumnosBD } from '../Models/alumnos'
+import { UsersBD } from '../Models/UsersBD'
 
 
 @Injectable({
     providedIn: 'root'
 })
 export class CursosService{
-    private alumnosall: Array<alumnosBD>
+    private alumnosall: Array<UsersBD>
 
     constructor(){
         this.alumnosall = [
-                new alumnosBD("Manuel", "M. P.", 54,"manuelmacpe@gmail.com", "667936811","./assets/media/fotommp.jpg", true, 6), 
-                new alumnosBD("Miguel", "R. R.", 39,"miguelrr@gmail.com", "123456789","./assets/media/fotommp.jpg", true, 8), 
-                new alumnosBD("Javier", "D. M.", 19,"javierdm@gmail.com", "123456789","./assets/media/fotommp.jpg", true, 8)
+                new UsersBD( "1","Manuel","./assets/media/fotommp.jpg", 33,"manuelmacpe@gmail.com", "123456", ),
+                new UsersBD( "2","Manu","./assets/media/fotommp.jpg", 22,"manuelmacpe@gmail.com", "123456", ),
+                new UsersBD( "1","Manolo","./assets/media/fotommp.jpg", 44,"manuelmacpe@gmail.com", "123456", ),        
         ]
 }
 
@@ -20,7 +20,7 @@ getTexto(){
     return "Texto desde un servicio"
 }
 
-getAlumnos(): Array<alumnosBD>{
+getAlumnos(): Array<UsersBD>{
     return this.alumnosall
 }
 }

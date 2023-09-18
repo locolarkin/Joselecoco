@@ -1,35 +1,22 @@
+
 export var profesorBase = {
+    rango: "2",
     nombre: "Manuel",
-    apellidos: "M P",
+    foto: "./assets/media/fotommp.jpg",
     edad: 54,
     correo: "manuelmacpe@gmail.com",
-    telefono: "667936811",
-    foto: "./assets/media/fotommp.jpg"
+    contrasena: "123456"
+    
 }
 
-export class alumnosBD {
-    // public nombreA: string
-    // public apellidosA: string
-    // public edadA: number
-    // public correoA: string
-    // public telefonoA: string
-    // public fotoA: string
-    // constructor(nombreA, apellidosA, edadA, correoA, telefonoA, fotoA){
-    //     this.nombreA = nombreA,
-    //     this.apellidosA = apellidosA,
-    //     this.edadA = edadA,
-    //     this.correoA = correoA,
-    //     this.telefonoA = telefonoA,
-    //     this.fotoA = fotoA
-    // }
+export class UsersBD {
+
     constructor(
-        public nombreA: string,
-        public apellidosA: string,
-        public edadA: number,
-        public correoA: string,
-        public telefonoA: string,
-        public fotoA: string, 
-        public estadoA: boolean,
-        public notaA: number
+        public rango: string,
+        public nombre: string,
+        public foto: string,
+        public edad: number,
+        public correo: string,
+        public contrasena: string, 
     ){}
 }

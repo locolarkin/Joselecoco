@@ -7,7 +7,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { AuthModule } from '@auth0/auth0-angular';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 import {MatCardModule} from '@angular/material/card';
+import {MatTableModule} from '@angular/material/table';
+import {MatInputModule} from '@angular/material/input';
 
 
 // Components
@@ -26,8 +29,10 @@ import { CrearCursoComponent } from './crear-curso/crear-curso.component';
 import { ListarCursoComponent } from './listar-curso/listar-curso.component';
 import { HeaderComponent } from './header/header.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import {DragDropModule} from '@angular/cdk/drag-drop';
 import { TareasComponent } from './tareas/tareas.component';
+import {TableComponent } from './extras/table/table.component';
+import {MatRadioModule} from '@angular/material/radio';
+
 
 @NgModule({
   declarations: [
@@ -42,9 +47,18 @@ import { TareasComponent } from './tareas/tareas.component';
     ListarCursoComponent,
     HeaderComponent,
     DashboardComponent,
+    AlumnosComponent,
+    TableComponent,
+  
     
+          
   ],
   imports: [
+    MatRadioModule,
+    MatInputModule,
+    AlumnoComponent,
+    ProfesoresComponent,
+    ProfesorComponent,
     MatCardModule,
     DragDropModule,
     BrowserModule,
@@ -53,11 +67,8 @@ import { TareasComponent } from './tareas/tareas.component';
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    AlumnoComponent,
-    // AlumnosComponent,
-    ProfesoresComponent,
-    ProfesorComponent,
     TareasComponent,
+    MatTableModule,
     ToastrModule.forRoot(),
     AuthModule.forRoot({
       domain: 'estadistica.auth0.com',

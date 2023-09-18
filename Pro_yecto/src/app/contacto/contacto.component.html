@@ -1,1 +1,25 @@
-<p>contacto works!</p>
+<form class="example-form" cdkDrag id="formulario">
+    <h2>FORMULARIO DE CONTACTO <button id="cerrar"><a routerLink="/">X</a></button></h2>
+    
+ 
+    <table class="example-full-width" cellspacing="0"><tr>
+      <td><mat-form-field class="example-full-width">
+        <mat-label>Nombre</mat-label>
+        <input matInput>
+      </mat-form-field></td>
+      <td><mat-form-field class="example-full-width">
+        <mat-label>E-mail</mat-label>
+        <input matInput>
+      </mat-form-field></td>
+    </tr></table>
+  
+    <table cellspacing="0" ><tr>
+      <td><mat-form-field id="mensaje">
+        <textarea matInput>Escriba su consulta.</textarea>
+      
+      </mat-form-field></td>
+    </tr></table>
+    <button>Ok</button>
+  </form>
+  
+  

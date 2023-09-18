@@ -1,0 +1,13 @@
+button {
+    background: rgb(0,33,74);
+    background: linear-gradient(0deg, rgba(0,33,74,1) 0%, rgba(12,60,120,1) 5%, rgba(13,63,124,1) 95%, rgba(0,115,255,1) 100%);
+    color: white;
+    border: solid 3px #04bbec;
+    font-family: quicksand;
+    font-weight: bold;
+}
+
+span {
+    font-family: quicksand;
+    font-weight: bold;
+}

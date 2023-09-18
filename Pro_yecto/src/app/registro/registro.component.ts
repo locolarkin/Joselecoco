@@ -1,31 +1,30 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'app-registro',
   templateUrl: './registro.component.html',
   styleUrls: ['./registro.component.css']
 })
-export class RegistroComponent implements OnInit{
-  public nombreA: string
-  public emailA: string 
-  public contrasenaA: string
-
-  constructor(){
-    this.nombreA = ''
-    this.emailA = ''
-    this.contrasenaA = ''
-
+export class RegistroComponent {
+    public rango: boolean
+    public nombre: string
+    public foto: string
+    public edad: string
+    public email: string
+    public contrasena: string
+    public contrasenaB: string
+  
+    constructor(){
+      this.rango = false
+      this.nombre = ""
+      this.foto = ""
+      this.edad = ""
+      this.email = ""
+      this.contrasena = ""
+      this.contrasenaB = ""
+    }
   }
 
-  submitFormA() {
-    console.log('Formulario enviado:');
-    console.log('Nombre:', this.nombreA);
-    console.log('Email:', this.emailA);
-    console.log('Contraseña:', this.contrasenaA);
-  }
 
-  ngOnInit(): void {
-    
-  }
 
-}

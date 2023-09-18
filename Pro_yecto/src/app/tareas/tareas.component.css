@@ -11,6 +11,8 @@
   }
   h2 {
    color:#ffffff;
+   background: rgb(0,33,74);
+   background: linear-gradient(0deg, rgba(0,33,74,1) 0%, rgba(12,60,120,1) 5%, rgba(13,63,124,1) 95%, rgba(0,115,255,1) 100%);
    font-size: 26px;
    width: 500px;
    margin: 0px;
@@ -59,6 +61,37 @@
   .example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) {
     transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
   }
+
+  button {
+    font-family: quicksand;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100px;
+    border-radius: 15px;
+    justify-content: center;
+    background: rgb(0,33,74);
+    background: linear-gradient(0deg, rgba(0,33,74,1) 0%, rgba(12,60,120,1) 5%, rgba(13,63,124,1) 95%, rgba(0,115,255,1) 100%);
+    color: white;
+    border: solid 3px #04bbec;
+}
+
+#cerrar {
+    font-family: quicksand;
+    font-weight: bold;
+    font-size: 16px;
+    width: 40px;
+    border-radius: 150px;
+    background: rgb(0,33,74);
+    background: linear-gradient(0deg, rgba(0,33,74,1) 0%, rgba(12,60,120,1) 5%, rgba(13,63,124,1) 95%, rgba(0,115,255,1) 100%);
+    border: solid 3px #04bbec;
+    color: white;
+    margin-left: 300px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
 
   
     

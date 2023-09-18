@@ -6,7 +6,7 @@ import { Global } from '../servicios/global';
 @Component({
   selector: 'app-cursos',
   templateUrl: './cursos.component.html',
-  styleUrls: ['./cursos.component.css'],
+  styleUrls: ['../cursos/cursos.component.css'],
   providers: [save_cursoService]
 })
 export class CursosComponent implements OnInit, DoCheck{

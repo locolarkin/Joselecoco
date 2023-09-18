@@ -1,0 +1,47 @@
+<div class="container mt-15" cdkDrag >
+    <div class="row">
+        <div class="col-lg-6" >
+            <div class="card" id="papito">
+                <div class="card-body text-center" id="creador" >
+                    <span class="titulo" id="titulo">{{ titulo | uppercase }}</span>
+                    <form class="mb-3" [formGroup]="taskForm" (ngSubmit)="agregarTarea()">
+                        <div class="mb-3">
+                            <input type="text" formControlName="UserName" class="form-control" placeholder="Usuario">
+                            <div class="text-danger" *ngIf="taskForm.get('UserName')?.hasError('required') && taskForm.get('UserName')?.touched">
+                                <span>Este campo es obligatorio</span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <textarea type="text" formControlName="TaskName" class="form-control" placeholder="Nombre_Tarea"></textarea>
+                            <div class="text-danger" *ngIf="taskForm.get('TaskName')?.hasError('required') && taskForm.get('TaskName')?.touched">
+                                <span>Este campo es obligatorio</span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" formControlName="TaskDescript" class="form-control" placeholder="Descripcion_Tarea">
+                            <div class="text-danger" *ngIf="taskForm.get('TaskDescript')?.hasError('required') && taskForm.get('TaskDescript')?.touched">
+                                <span>Este campo es obligatorio</span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" formControlName="Award" class="form-control" placeholder="Recompensa">
+                            <div class="text-danger" *ngIf="taskForm.get('Award')?.hasError('required') && taskForm.get('Award')?.touched">
+                                <span>Este campo es obligatorio</span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" formControlName="State" class="form-control" placeholder="Estado">
+                            <div class="text-danger" *ngIf="taskForm.get('State')?.hasError('required') && taskForm.get('State')?.touched">
+                                <span>Este campo es obligatorio</span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <button class="btn btn-secondary float-start" routerLink="/">VOLVER</button>
+                            <button id="Enviar" type="submit" [disabled]="taskForm.invalid" class="btn btn-success float-end">ACEPTAR</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

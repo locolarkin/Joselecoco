@@ -1,0 +1,13 @@
+button{
+    font-family: quicksand;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100px;
+    margin: 15px;
+    border-radius: 15px;
+    justify-content: center;
+    background: rgb(0,33,74);
+    background: linear-gradient(0deg, rgba(0,33,74,1) 0%, rgba(12,60,120,1) 5%, rgba(13,63,124,1) 95%, rgba(0,115,255,1) 100%);
+    border: solid 2px #04bbec;
+    color: white;
+}

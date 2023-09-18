@@ -16,6 +16,8 @@ export class TareasComponent {
 
   todo = ['Get to work', 'Pick up groceries', 'Go home', 'Fall asleep'];
 
+  Inprogress = ['Something'];
+
   done = ['Get up', 'Brush teeth', 'Take a shower', 'Check e-mail', 'Walk dog'];
 
   drop(event: CdkDragDrop<string[]>) {

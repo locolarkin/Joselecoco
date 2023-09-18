@@ -1,0 +1,32 @@
+<table mat-table weight[dataSource]="dataSource" class="mat-elevation-z8 demo-table">
+    <!-- Position Column -->
+    <ng-container matColumnDef="demo-position">
+      <th mat-header-cell *matHeaderCellDef> No. </th>
+      <td mat-cell *matCellDef="let alumno"> {{alumno.position}} </td>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="demo-name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let alumno"><a href="/alumno"> {{alumno.name}}</a> </td>
+    </ng-container>
+  
+    <!-- Score Column -->
+    <ng-container matColumnDef="demo-score">
+      <th mat-header-cell *matHeaderCellDef> Score </th>
+      <td mat-cell *matCellDef="let alumno"> {{alumno.score}} </td>
+    </ng-container>
+  
+    <!-- Lvl Column -->
+    <ng-container matColumnDef="demo-lvl">
+      <th mat-header-cell *matHeaderCellDef> Level </th>
+      <td mat-cell *matCellDef="let alumno"> {{alumno.lvl}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  
+  
+  
+  
