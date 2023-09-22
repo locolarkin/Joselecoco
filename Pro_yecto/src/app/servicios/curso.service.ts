@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Curso} from '../Models/curso';
+import { curso} from '../Models/curso';
 import { Global } from './global';
 
 @Injectable()
@@ -18,7 +18,7 @@ export class save_cursoService{
 		return 'Probando el servicio de Angular';
 	}
 
-	saveCurso(curso: Curso): Observable<any>{
+	saveCurso(curso: curso): Observable<any>{
 		let params = JSON.stringify(curso);
 		let headers = new HttpHeaders().set('Content-Type','application/json');
 
@@ -47,7 +47,7 @@ export class save_cursoService{
 		let params = JSON.stringify(curso);
 		let headers = new HttpHeaders().set('Content-Type', 'application/json');
 
-		return this._http.put(this.url+'curso/'+Curso._id, params, {headers: headers});
+		return this._http.put(this.url+'curso/'+curso._id, params, {headers: headers});
 	}
 
 }

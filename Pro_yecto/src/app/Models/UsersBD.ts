@@ -1,10 +1,13 @@
 export class UsersBD{
     constructor(
-        public rango: string,
+        public rank: string,
         public nombre: string,
+        public apellidos: string,
         public foto: string,
-        public edad: number,
-        public correo: string,
-        public contrasena: string, 
+        public birthdate: string,
+        public email: string,
+        public phone: string,
+        public pass: string, 
+        public notes: string,
     ){}
 }

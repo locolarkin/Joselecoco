@@ -12,7 +12,7 @@ import { GtaskService } from '../servicios/Task.service';
   styleUrls: ['./task-g.component.css']
 })
 export class TaskGComponent{
-  TaskForm: FormGroup;
+  taskForm: FormGroup;
   titulo = 'Crear tarea';
     id: string | null;
     constructor(private fb: FormBuilder,
@@ -20,7 +20,7 @@ export class TaskGComponent{
                 private toastr: ToastrService,
                 private _taskService: GtaskService,
                 private aRouter: ActivatedRoute) { 
-      this.TaskForm = this.fb.group({
+      this.taskForm = this.fb.group({
         UserName: ['', Validators.required],
         TaskName: ['', Validators.required],
         TaskDescript: ['', Validators.required],
@@ -38,13 +38,13 @@ export class TaskGComponent{
     agregarTarea() {
   
       const TAREA: GTask = {
-        IdTask: this.TaskForm.get('IdTask')?.value,
-        IdUser: this.TaskForm.get('IdUser')?.value,
-        UserName: this.TaskForm.get('UserName')?.value,
-        TaskName: this.TaskForm.get('TaskName')?.value,
-        TaskDescript: this.TaskForm.get(' TaskDescript')?.value,
-        Award: this.TaskForm.get('Award')?.value,
-        State: this.TaskForm.get('State')?.value,
+        IdTask: this.taskForm.get('IdTask')?.value,
+        IdUser: this.taskForm.get('IdUser')?.value,
+        UserName: this.taskForm.get('UserName')?.value,
+        TaskName: this.taskForm.get('TaskName')?.value,
+        TaskDescript: this.taskForm.get(' TaskDescript')?.value,
+        Award: this.taskForm.get('Award')?.value,
+        State: this.taskForm.get('State')?.value,
       }
   
       if(this.id !== null){
@@ -54,7 +54,7 @@ export class TaskGComponent{
           this.router.navigate(['/']);
         }, error => {
           console.log(error);
-          this.TaskForm.reset();
+          this.taskForm.reset();
         })
       } else{
         // Agregamos Curso
@@ -64,7 +64,7 @@ export class TaskGComponent{
           this.router.navigate(['/']);
         }, error => {
           console.log(error);
-          this.TaskForm.reset();
+          this.taskForm.reset();
         })
       }
     }
@@ -73,7 +73,7 @@ export class TaskGComponent{
       if(this.id !== null) {
         this.titulo = 'Editar Tarea';
         this._taskService.obtenerTarea(this.id).subscribe(data => {
-          this.TaskForm.setValue({
+          this.taskForm.setValue({
             TaskName: data. TaskName,
             TaskDescript: data.TaskDescript,
             Award: data.Award,

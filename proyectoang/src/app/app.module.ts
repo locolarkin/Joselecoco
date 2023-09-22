@@ -17,7 +17,9 @@ import { FormulariodeRegistroComponent } from './formulariode-registro/formulari
 import { FormulariodeConsultaComponent } from './formulariode-consulta/formulariode-consulta.component';
 import { CrearcursoComponent } from './crearcurso/crearcurso.component';
 import { TaskGComponent } from './task-g/task-g.component';
-import { ToastrService } from 'ngx-toastr';
+import { ToastrModule } from 'ngx-toastr';
+
+
 
 @NgModule({
   declarations: [
@@ -32,6 +34,7 @@ import { ToastrService } from 'ngx-toastr';
     FormulariodeRegistroComponent,
     FormulariodeConsultaComponent,
     CrearcursoComponent,
+    TaskGComponent
     
 
   ],
@@ -41,8 +44,8 @@ import { ToastrService } from 'ngx-toastr';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    ToastrService,
-    TaskGComponent
+    ToastrModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

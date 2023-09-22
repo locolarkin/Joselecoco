@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Curso } from '../Models/curso';
+import { curso } from '../Models/curso';
 import { save_cursoService} from '../servicios/curso.service';
 import { UploadService } from '../servicios/upload.service';
 import { Global } from '../servicios/global';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-crearcurso',
@@ -15,7 +16,7 @@ import { Global } from '../servicios/global';
 export class CrearcursoComponent implements OnInit {
 
   public title: string;
-	public curso: Curso;
+	public curso: curso;
 	public save_curso: any;
 	public status: any;
 	public filesToUpload: Array<File> = [];
@@ -25,7 +26,7 @@ export class CrearcursoComponent implements OnInit {
 		private _uploadService: UploadService
 	){
 		this.title = "Crear Curso";
-		this.curso = new Curso('','','','',6,'','');
+		this.curso = new curso('','','',6,'','',);
 	}
 
 	ngOnInit() {

@@ -26,7 +26,8 @@ titulo = 'Crear curso';
       descripcion: ['', Validators.required],
       categoria: ['', Validators.required],
       duracion: ['', Validators.required],
-      temas: ['', Validators.required]
+      temas: ['', Validators.required],
+      imagen: ['', Validators.required]
     })
     this.id = this.aRouter.snapshot.paramMap.get('id');
   }
@@ -42,7 +43,8 @@ titulo = 'Crear curso';
       descripcion: this.cursoForm.get('descripcion')?.value,
       categoria: this.cursoForm.get('categoria')?.value,
       duracion: this.cursoForm.get('duracion')?.value,
-      temas: this.cursoForm.get('temas')?.value
+      temas: this.cursoForm.get('temas')?.value,
+      imagen: this.cursoForm.get('imagen')?.value,
     }
 
     if(this.id !== null){

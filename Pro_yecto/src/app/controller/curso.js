@@ -1,4 +1,4 @@
-const Curso = require('../models/curso')
+const Curso = require('../Models/curso')
 const fs = require('fs');
 const path = require('path');
 
@@ -20,12 +20,12 @@ const controller = {
 		const curso = new Curso();
 
 		const params = req.body;
-		curso.name = params.name;
+		curso.nombre = params.name;
 		curso.descripcion = params.descripcion;
-		curso.category = params.category;
+		curso.categoria = params.category;
 		curso.duracion = params.duracion;
         curso.temas = params.temas;
-		curso.image = null;
+		curso.imagen = null;
 
 		curso.save((err, cursoStored) => {
 			if(err) return res.status(500).send({message: 'Error al guardar el documento.'});

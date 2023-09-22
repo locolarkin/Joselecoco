@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const CursoSchema = mongoose.Schema({
+const cursoSchema = mongoose.Schema({
     nombre: {
         type: string,
         required: true
@@ -21,10 +21,11 @@ const CursoSchema = mongoose.Schema({
         type: string,
         required: true
     },
-    fechaCreacion: {
-        type: Date,
-        default: Date.now()
-    }
+    imagen: {
+        type: string,
+        required: true
+    },
+
 });
 
-module.exports = mongoose.model('Curso', CursoSchema);
+module.exports = mongoose.model('curso', cursoSchema);

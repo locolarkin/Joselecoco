@@ -1,4 +1,4 @@
-const Model = require('../models/user')
+const Model = require('../Models/UsersBD')
 const fs = require('fs');
 const path = require('path');
 
@@ -21,10 +21,14 @@ const controller = {
 
 		const params = req.body;
 		user.nombre = params.nombre;
-		user.descripcion = params.descripcion;
-		user.categor = params.edad;
-		user.mail = params.mail;
-		user.image = null;
+		user.apellidos = params.apellidos;
+		user.birthdate = params.birthdate;
+		user.rank = params.rank;
+		user.email = params.email;
+		user.phone = params.phone;
+		user.pass = params.pass;
+		user.notes = params.notes;
+		user.foto = null;
 
 		user.save((err, userStored) => {
 			if(err) return res.status(500).send({message: 'Error al guardar el documento.'});

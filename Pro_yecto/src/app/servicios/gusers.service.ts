@@ -9,9 +9,9 @@ export class AlumnosService {
 
   constructor() {
     this.alumnosAll = [
-      new UsersBD("1","Manuel", "./assets/media/avatar1.jpg", 54,"manuelmacpe@gmail.com", "123456"), 
-      new UsersBD("2","Miguel", "./assets/media/avatar2.jpg", 39,"miguelrr@gmail.com", "123456"), 
-      new UsersBD("1","Javier", "./assets/media/avatar3.jpg", 19,"javierdm@gmail.com", "123456"),
+      new UsersBD("1", "Manolo","Lama","./assets/media/fotommp.jpg","04/04/1984","manololama@gmail.com","555354565", "123456","el rey de la cama"),  
+      new UsersBD("2", "Arturo","Maduro","./assets/media/fotommp.jpg","04/04/1984","arturitoe@gmail.com","555354565", "123456","se tiro de un muro"),  
+      new UsersBD("1", "Paco","Jones","./assets/media/fotommp.jpg","04/04/1984","pacojones@gmail.com","555354565", "123456","pacojoneslosmios!!"), 
 ]
 
 

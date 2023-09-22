@@ -1,20 +1,20 @@
 <div id="contform">
     <form action="" name="formulario">
         <label for="name" id="nombre" name="nombreDelAlumno">Usuario</label>
-        <input [(ngModel)]="usuario" type="text">
+        <input [(ngModel)]="nombre" type="text">
         <label for="password" id="pass">Contraseña</label>
-        <input [(ngModel)]="contrasena" type="password">
+        <input [(ngModel)]="pass" type="password">
         <button (click)="correct" id="addbutton">Enviar</button>
     </form></div>
 <div *ngIf="enviar; then Sicorrect else Nocorrect"></div>
 
 <ng-template #Sicorrect>
-    <h2>{{usuario}}</h2>
+    <h2>{{nombre}}</h2>
     <p>Usuario Correcto!</p>
 </ng-template>
 
 <ng-template #Nocorrect>
-    <h2>{{usuario}}</h2>
+    <h2>{{nombre}}</h2>
     <p>Usuario Incorrecto!</p>
 </ng-template>
 

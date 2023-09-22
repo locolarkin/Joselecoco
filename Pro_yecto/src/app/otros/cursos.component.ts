@@ -1,5 +1,5 @@
 import { Component, OnInit, DoCheck } from '@angular/core';
-import { Curso } from '../Models/curso';
+import { curso } from '../Models/curso';
 import { save_cursoService } from '../servicios/curso.service';
 import { Global } from '../servicios/global';
 
@@ -13,7 +13,7 @@ export class CursosComponent implements OnInit, DoCheck{
   public nombre: string
   public listado: string
 
-  public cursos: Curso[] = [];
+  public cursos: curso[] = [];
   public url: string;
 
   constructor(private _cursoService: save_cursoService){

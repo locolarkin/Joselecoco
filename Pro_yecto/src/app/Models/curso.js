@@ -2,13 +2,12 @@ const mongoose =  require('mongoose')
 
 const CursoSchema = new mongoose.Schema(
     {
-        _id: string,
-		name: string,
-		description: string,
-		category: string,
+		nombre: string,
+		descripcion: string,
+		categoria: string,
 		duracion: number,
 		temas: string,
-		image: string
+		imagen: string
     }
 )
 

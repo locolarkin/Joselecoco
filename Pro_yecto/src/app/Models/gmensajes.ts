@@ -2,9 +2,10 @@ const mongoose =  require('mongoose')
 
 const MessageSchema = new mongoose.Schema(
     {
-	nombre: String,
+	remitente: String,
 	mail: String,
-	consulta: String,
+	asunto: String,
+	mensaje: String,
     }
 )
 

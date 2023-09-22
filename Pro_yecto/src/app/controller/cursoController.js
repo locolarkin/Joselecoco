@@ -1,4 +1,4 @@
-const Curso = require("../models/CursoModel");
+const Curso = require("../Models/CursoModel");
 
 exports.crearCurso = async (req, res) => {
     try {
@@ -23,7 +23,7 @@ exports.obtenerCursos = async (req, res) => {
 }
 exports.actualizarCurso = async (req, res) => {
     try {
-        const { nombre, descripcion, categoria, duracion, temas} = req.body;
+        const { nombre, descripcion, categoria, duracion, temas, imagen} = req.body;
         let curso = await Curso.findById(req.params.id);
         if(!curso) {
             res.status(404).json({ msg: 'No existe el Curso' })
@@ -33,6 +33,7 @@ exports.actualizarCurso = async (req, res) => {
         curso.categoria = categoria;
         curso.duracion = duracion;
         curso.temas = temas;
+        curso.imagen = imagen;
         curso = await Curso.findOneAndUpdate({ _id: req.params.id },curso, { new: true} )
         res.json(curso);       
     } catch (error) {

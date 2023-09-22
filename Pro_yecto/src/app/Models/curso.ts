@@ -1,12 +1,11 @@
-export class Curso{
+export class curso{
 	static _id: string;
 	constructor(
-		public _id: string,
-		public name: string,
-		public description: string,
-		public category: string,
+		public nombre: string,
+		public descripcion: string,
+		public categoria: string,
 		public duracion: number,
 		public temas: string,
-		public image: string
+		public imagen: string
 	){}
 }

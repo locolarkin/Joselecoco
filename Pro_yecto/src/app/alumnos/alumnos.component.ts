@@ -27,7 +27,7 @@ export class AlumnosComponent implements OnInit {
 
   getcorreosEle() {
     this.alumnosall.forEach((alumno) => {
-      this.correosEle.push(alumno.correo);
+      this.correosEle.push(alumno.email);
     });
     console.log(this.correosEle);
   }

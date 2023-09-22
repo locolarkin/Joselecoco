@@ -22,11 +22,11 @@ var controller = {
 		var project = new Project();
 
 		var params = req.body;
-		project.name = params.name;
-		project.description = params.description;
-		project.category = params.category;
-		project.year = params.year;
-		project.langs = params.langs;
+		project.nombre = params.nombre;
+		project.descripcion = params.descripcion;
+		project.categoria = params.categoria;
+		project.duracion = params.duracion;
+		project.temas = params.temas;
 		project.image = null;
 
 		project.save((err, projectStored) => {

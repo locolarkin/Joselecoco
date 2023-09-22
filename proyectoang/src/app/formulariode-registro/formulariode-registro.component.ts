@@ -6,17 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./formulariode-registro.component.css']
 })
 export class FormulariodeRegistroComponent {
-  public usuario: string
+  public rank: string
+  public nombre: string
+  public apellidos: string
+  public foto: string
   public email: string
-  public nacimiento: string
-  public contrasena: string
-  public contrasenaB: string
+  public birthdate: string
+  public phone: string
+  public pass: string
 
   constructor(){
+    this.rank = ""
     this.email = ""
-    this.nacimiento = ""
-    this.usuario = ""
-    this.contrasena = ""
-    this.contrasenaB = ""
+    this.birthdate = ""
+    this.nombre = ""
+    this.apellidos = ""
+    this.foto = ""
+    this.phone = ""
+    this.pass = ""
   }
 }

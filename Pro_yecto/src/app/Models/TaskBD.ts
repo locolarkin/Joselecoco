@@ -1,11 +1,13 @@
 export class GTask{
 	static _id: string;
 	constructor(
-		public UserId: string,
-		public TaskId: string,
-		public taskname: string,
+		public nombre: string,
+		public descripcion: string,
 		public importancia: string,
-		public estate: string,
-		public award: number,
+		public estado: string,
+		public reward: number,
+		public est_entrega: string,
+		public fec_entrega: Date
+
 	){}
 }

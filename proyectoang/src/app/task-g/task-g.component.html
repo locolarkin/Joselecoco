@@ -4,7 +4,7 @@
             <div class="card" id="papito">
                 <div class="card-body text-center" id="creador" >
                     <span class="titulo" id="titulo">{{ titulo | uppercase }}</span>
-                    <form class="mb-3" [formGroup]="taskForm" (ngSubmit)="agregarTarea()">
+                    <form class="mb-3" [formGroup]= "taskForm" (ngSubmit)="agregarTarea()">
                         <div class="mb-3">
                             <input type="text" formControlName="UserName" class="form-control" placeholder="Usuario">
                             <div class="text-danger" *ngIf="taskForm.get('UserName')?.hasError('required') && taskForm.get('UserName')?.touched">

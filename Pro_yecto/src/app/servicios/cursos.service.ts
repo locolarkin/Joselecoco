@@ -10,9 +10,9 @@ export class CursosService{
 
     constructor(){
         this.alumnosall = [
-                new UsersBD( "1","Manuel","./assets/media/fotommp.jpg", 33,"manuelmacpe@gmail.com", "123456", ),
-                new UsersBD( "2","Manu","./assets/media/fotommp.jpg", 22,"manuelmacpe@gmail.com", "123456", ),
-                new UsersBD( "1","Manolo","./assets/media/fotommp.jpg", 44,"manuelmacpe@gmail.com", "123456", ),        
+                new UsersBD("1", "Paco","Paquez","./assets/media/fotommp.jpg","01/05/1994","manuelmacpe@gmail.com","555354565", "123456","loren ipsum rules"), 
+                new UsersBD("1", "Servando","Servandez","./assets/media/fotommp.jpg","14/09/1988","manuelmacpe@gmail.com","555354565", "123456","tal y cual"), 
+                new UsersBD("2", "Manolo","Manolez","./assets/media/fotommp.jpg","04/04/1984","manuelmacpe@gmail.com","555354565", "123456","esto ya estaria"),        
         ]
 }
 

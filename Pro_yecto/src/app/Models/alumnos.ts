@@ -2,21 +2,27 @@
 export var profesorBase = {
     rango: "2",
     nombre: "Manuel",
+    apellidos: "Manuelez",
     foto: "./assets/media/fotommp.jpg",
-    edad: 54,
-    correo: "manuelmacpe@gmail.com",
-    contrasena: "123456"
+    birthdate: "21/01/71",
+    email: "manuelmacpe@gmail.com",
+    phone: "555329255",
+    pass: "123456",
+    notes: "I dont know because yo no estaba aqui ni eso"
     
 }
 
 export class UsersBD {
 
     constructor(
-        public rango: string,
+        public rank: string,
         public nombre: string,
+        public apellidos: string,
         public foto: string,
-        public edad: number,
-        public correo: string,
-        public contrasena: string, 
+        public birthdate: string,
+        public email: string,
+        public phone: string,
+        public pass: string, 
+        public notes: string,
     ){}
 }
