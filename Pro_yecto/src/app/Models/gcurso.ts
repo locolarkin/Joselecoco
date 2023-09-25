@@ -5,6 +5,7 @@ export class GCurso{
 	public duracion: number
 	public temas: string
 	public imagen: string
+	public _id?: string
 	constructor(nombre: string, descripcion: string, categoria: string, duracion: number, temas: string, imagen: string,){
         this.nombre = nombre;
         this.descripcion = descripcion;

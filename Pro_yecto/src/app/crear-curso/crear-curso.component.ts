@@ -4,7 +4,7 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms'
 import {ActivatedRoute, Router} from '@angular/router'
 import { ToastrService } from 'ngx-toastr'
 // Servicio - Modelo
-import { GCurso } from '../Models/gcurso'
+import { GCurso } from '../models/gcurso'
 import { GcursoService } from '../servicios/gcurso.service'
 
 @Component({
@@ -36,7 +36,7 @@ titulo = 'Crear curso';
     this.esEditar();
   }
 
-  agregarCurso() {
+  guardarCurso() {
 
     const CURSO: GCurso = {
       nombre: this.cursoForm.get('nombre')?.value,

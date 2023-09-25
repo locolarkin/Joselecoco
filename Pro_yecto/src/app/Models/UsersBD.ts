@@ -9,5 +9,6 @@ export class UsersBD{
         public phone: string,
         public pass: string, 
         public notes: string,
+        public _id?: string,
     ){}
 }

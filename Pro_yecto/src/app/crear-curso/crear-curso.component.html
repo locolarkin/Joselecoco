@@ -4,7 +4,7 @@
             <div class="card" id="papito">
                 <div class="card-body text-center" id="creador" >
                     <span class="titulo" id="titulo">{{ titulo | uppercase }}</span>
-                    <form class="mb-3" [formGroup]="cursoForm" (ngSubmit)="agregarCurso()">
+                    <form class="mb-3" [formGroup]="cursoForm" (ngSubmit)="guardarCurso()">
                         <div class="mb-3">
                             <input type="text" formControlName="nombre" class="form-control" placeholder="Curso">
                             <div class="text-danger" *ngIf="cursoForm.get('nombre')?.hasError('required') && cursoForm.get('nombre')?.touched">
@@ -36,8 +36,15 @@
                             </div>
                         </div>
                         <div class="mb-3">
+                            <input type="text" formControlName="imagen" class="form-control" placeholder="Imagen">
+                            <div class="text-danger" *ngIf="cursoForm.get('imagen')?.hasError('required') && cursoForm.get('imagen')?.touched">
+                                <span>Los imagen son obligatorios</span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
                             <button class="btn btn-secondary float-start" routerLink="/">VOLVER</button>
-                            <button id="Enviar" type="submit" [disabled]="cursoForm.invalid" class="btn btn-success float-end">ACEPTAR</button>
+                            <!-- <button id="Enviar" type="submit" [disabled]="cursoForm.invalid" class="btn btn-success float-end">ACEPTAR</button> -->
+                            <button id="Enviar" type="submit" class="btn btn-success float-end">ACEPTAR</button>
                         </div>
                     </form>
                 </div>

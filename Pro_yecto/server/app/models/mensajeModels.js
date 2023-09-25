@@ -1,23 +1,23 @@
 const mongoose = require('mongoose');
 
-const CursoSchema = mongoose.Schema({
+const MensajeSchema = mongoose.Schema({
     nombre: {
         type: String,
         required: true
     },
-    descripcion: {
+    email: {
         type: String,
         required: true
     },
-    categoria: {
+    telefono: {
         type: String,
         required: true
     },
-    duracion: {
-        type: Number,
+    asunto: {
+        type: String,
         required: true
     },
-    temas: {
+    textomensaje: {
         type: String,
         required: true
     },
@@ -27,4 +27,4 @@ const CursoSchema = mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model('Curso', CursoSchema);
+module.exports = mongoose.model('Mensaje', MensajeSchema);

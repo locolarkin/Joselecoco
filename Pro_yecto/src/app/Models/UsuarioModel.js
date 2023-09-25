@@ -1,23 +1,31 @@
 const mongoose = require('mongoose');
 
-const CursoSchema = mongoose.Schema({
+const UsuarioSchema = mongoose.Schema({
     nombre: {
         type: String,
         required: true
     },
-    descripcion: {
+    apellidos: {
         type: String,
         required: true
     },
-    categoria: {
+    Fnacimiento: {
         type: String,
         required: true
     },
-    duracion: {
-        type: Number,
+    email: {
+        type: String,
         required: true
     },
-    temas: {
+    telefono: {
+        type: String,
+        required: true
+    },
+    tipo: {
+        type: String,
+        required: true
+    },
+    foto: {
         type: String,
         required: true
     },
@@ -27,4 +35,4 @@ const CursoSchema = mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model('Curso', CursoSchema);
+module.exports = mongoose.model('Usuario', UsuarioSchema);
